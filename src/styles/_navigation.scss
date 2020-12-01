@@ -1,0 +1,49 @@
+.navigation {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 160px;
+    height: 40px;
+    padding-left: 7px;
+    object-fit: contain;
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    margin-left: 70px;
+    list-style-type: none;
+  }
+
+  &__item--active {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: -9px;
+      width: 17px;
+      border: 1px solid blue;
+    }
+  }
+
+  &__item-link {
+    font-family: "Roboto Bold", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+
+    transition: 300ms;
+
+    &:hover {
+      color: blue;
+    }
+  }
+}
