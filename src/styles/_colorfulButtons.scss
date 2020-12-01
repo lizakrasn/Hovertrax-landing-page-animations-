@@ -1,0 +1,41 @@
+.colorful-buttons {
+  &__1,
+  &__2,
+  &__3,
+  &__4,
+  &__5 {
+    width: 20px;
+    height: 20px;
+    margin-right: 30px;
+
+    border: 2px solid transparent;
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: 300ms;
+
+    &:hover {
+      border-color: black;
+    }
+  }
+
+  &__1{
+    background-color: #e2e837,
+  }
+
+  &__2{
+    background-color: #00b6f1,
+  }
+
+  &__3{
+    background-color: #e23232,
+  }
+
+  &__4{
+    background-color: #f0efef,
+  }
+
+  &__5 {
+    background-color: #0c0c0c,
+  }
+}

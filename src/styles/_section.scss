@@ -5,6 +5,15 @@
     padding: 30px 230px;
   }
 
+  &--right-padding {
+    padding: 30px 370px 50px 0;
+
+      background-image: url(/images/background-image2.png);
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: top right 190px;
+  }
+
   &--left-padding {
     padding: 30px 0 50px 370px;
 

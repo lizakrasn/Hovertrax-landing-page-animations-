@@ -13,6 +13,13 @@
 }
 
 @font-face {
+  font-family: 'Roboto Light';
+  src: url("/fonts/roboto/Robotolight.ttf") format('ttf'),
+       url("/fonts/roboto/Robotolight.woff") format('woff'),
+       url("/fonts/roboto/Robotolight.woff2") format('woff2');
+}
+
+@font-face {
   font-family: 'Rubik Mono One';
   src: url("/fonts/rubikmono/rubikmonooneregular.ttf") format('ttf'),
        url("/fonts/rubikmono/rubikmonooneregular.woff") format('woff'),
