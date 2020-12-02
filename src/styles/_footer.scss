@@ -1,0 +1,122 @@
+.footer {
+  height: 820px;
+  position: relative;
+  background-color: #3a2ff8;
+
+  &__container {
+    padding-left: 370px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__background-image {
+    position: absolute;
+    width: calc(100% - 470px);
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    opacity: 0.05;
+    background-image: url(/images/background-image1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__info {
+    max-width: 330px;
+    color: white;
+  }
+
+  &__title {
+    margin: 95px 0 80px;
+    font-family: 'Roboto Bold', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-family: 'Roboto Light', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  &__text-bold {
+    font-family: 'Roboto Bold', Arial, Helvetica, sans-serif;
+  }
+
+  &__button {
+    margin-top: 100px;
+    width: 270px;
+    height: 50px;
+
+    font-family: 'Roboto Bold', Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    color: #3a2ff8;
+    text-transform: uppercase;
+
+    border: 2px solid transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 300ms;
+
+    &:hover {
+      color: white;
+      border-color: white;
+      background-color: #3a2ff8;
+    }
+  }
+
+  &__image-container {
+    height: 770px;
+    width: calc(100% - 360px);
+    position: relative;
+    top: -60px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__background-comment {
+    // width: 100%;
+    // height: 100%;
+    // position: absolute;
+    // bottom: 0;
+    // left:
+
+    // opacity: 0.5;
+    // transform: rotate(90deg);
+    // background-image: url(/images/background-image2.png);
+    // background-size: contain;
+    // background-repeat: no-repeat;
+
+    max-width: fit-content;
+    position: absolute;
+    bottom: -35px;
+
+    font-family: 'Rubik Mono One', Arial, Helvetica, sans-serif;
+    font-size: 180px;
+    letter-spacing: -6px;
+    text-align: right;
+    color: rgb(255, 255, 255, 0.5);
+  }
+
+  &__comment {
+    height: 30px;
+    padding: 8px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #292929;
+
+    font-family: 'Roboto Bold', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #5c5b5b;
+  }
+}
