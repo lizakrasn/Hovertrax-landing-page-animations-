@@ -20,15 +20,15 @@
 
         <ul class="navigation__menu">
           <li class="navigation__item navigation__item--active">
-            <a href="#" class="navigation__item-link">Преимущества</a>
+            <a href="#details" class="navigation__item-link">Преимущества</a>
           </li>
     
           <li class="navigation__item">
-            <a href="#" class="navigation__item-link">Характеристики</a>
+            <a href="#modes" class="navigation__item-link">Характеристики</a>
           </li>
 
           <li class="navigation__item">
-            <a href="#" class="navigation__item-link">Для кого</a>
+            <a href="#footer" class="navigation__item-link">Для кого</a>
           </li>
         </ul>
       </nav>
@@ -36,7 +36,7 @@
 
     <section class="section section--left-padding">
 
-      <div class="header section__header">
+      <div class="header section__header" id="header">
         <div class="header__info">
           <div class="header__arrow">
             <div class="header__arrow-dot"></div>
@@ -62,8 +62,16 @@
     </section>
 
     <section class="section section--right-padding">
+      <div class="section__border">
+        <div class="section__pseudo-element">
+          <div class="section__pseudo-dot"></div>
+          <div class="section__pseudo-dot section__pseudo-dot--big"></div>
+          <div class="section__pseudo-dot"></div>
+          <div class="section__pseudo-dot"></div>
+        </div>
+      </div>
 
-      <div class="product section__product">
+      <div class="product section__product" id="details">
         <div class="product__media">
           <img
             class="product__image"
@@ -78,7 +86,7 @@
 
           <div class="property product__property">
             <p class="property__title"> Дизайн</p>
-            <p class="property__text">Внешний вид скутера дышит идями футуризма</p>
+            <p class="property__text">Внешний вид скутера дышит идеями футуризма</p>
             <ul class="property__list">
               <li class="property__item">плавные линии</li>
               <li class="property__item">подсветка светодиодными индикаторами</li>
@@ -103,11 +111,71 @@
               src="images/hoverboard.png"
               alt="black hoverboard"
             >
+            <div class="product__arrow">
+              <div class="product__arrow-body"></div>
+              <div class="product__arrow-dot"></div>
+            </div>
           </div>
         </div>
       </div>
-
     </section>
+
+    <section class="section section--left-padding">
+      <div class="modes" id="modes">
+        <div class="modes__info">
+          <div class="property modes__property">
+            <p class="property__title"> Режимы</p>
+            <p class="property__text">Помимо «умной» подсветки,
+              <span class="property__text-bold">Hovertrax 4.0</span> снабжён двумя скоростными режимами
+            </p>
+            <ul class="property__list">
+              <li class="property__item">Один для продвинутых пользователей</li>
+              <li class="property__item">Второй для новичков</li>
+            </ul>
+          </div>
+          <div class="modes__info-speed">
+            <p class="modes__speed">
+              <span class="modes__text-span">
+                13<span class="modes__text-span--small">км/ч</span>
+              </span>
+              Максимальная скорость
+            </p>
+            <p class="modes__speed">
+              <span class="modes__text-span">2</span>
+              Скоростных режима
+            </p>
+          </div>
+          <div class="modes__arrow">
+            <div class="modes__arrow-body"></div>
+            <div class="modes__arrow-dot"></div>
+          </div>
+        </div>
+        <div class="modes__media">
+          <img
+            class="modes__image"
+            src="images/video3.png"
+            alt="Hovertrax"
+          >
+          <button class="button modes__button">
+            <p class="button__text">Смотреть видео</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class=" footer__info">
+        <p class="footer__title"> Для кого</p>
+        <p class="footer__text"></p>
+        <button class="footer__buton">Перейти в каталог</button>
+      </div>
+      <img
+        class="footer__image"
+        src="images/video3.png"
+        alt="Hovertrax"
+      >
+      <div class="footer__comment"></div>
+    </footer>
   </body>
 
 </html>

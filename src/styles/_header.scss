@@ -84,6 +84,11 @@
     z-index: -1;
   }
 
+  &__button {
+    left: -32px;
+    top: 75px;
+  }
+
   @media screen and (max-width: 1600px) {
     height: 550px;
 
@@ -96,7 +101,7 @@
     &__title {
       max-width: 680px;
       font-family: 'Rubik Mono One', Arial, Helvetica, sans-serif;
-      font-size: 50px;
+      font-size: 55px;
     }
 
     &__subtitle {
@@ -104,12 +109,32 @@
     }
 
     &__media {
-      width: calc(100% - 308px);
+      width: calc(100% - 408px);
+    }
+
+    &__button {
+      left: -30px;
+      top: 35px;
     }
 
     &__arrow {
-      top: -45px;
-      right: 400px;
+      top: -85px;
+      right: 360px;
+    }
+
+    &__arrow-body {
+      width: 17px;
+      height: 110px;
+  
+      border-bottom: none;
+      border-right: none;
+      border-top: 1px solid #aaaaaa;
+      border-left: 1px solid #aaaaaa;
+    }
+
+    &__arrow-dot {
+      top: -1px;
+      right: -1px;
     }
   }
 }
