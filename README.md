@@ -2,7 +2,7 @@
 * Click the link to see the [Demo](https://lizakrasn.github.io/Hovertrax-landing-page-animations-/).
 
 ## Description
-* Stack: HTML5, SASS, CSS animations, GSAP, Flexbox, BEM methodology.
+* Stack: HTML5, SASS, GSAP, Flexbox, BEM methodology.
   - Mobile (> 320px)
   - Surface Duo 540px
   - Tablet 768px
