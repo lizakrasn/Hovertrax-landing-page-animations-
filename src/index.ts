@@ -7,13 +7,12 @@ import { PixiPlugin } from "gsap/PixiPlugin";
 import { TextPlugin } from "gsap/TextPlugin";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { SplitText } from "gsap/SplitText";
 
-import navigation from "./animations/navigation";
 import header from "./animations/header";
 import product from "./animations/product";
 import modes from "./animations/modes";
 import footer from "./animations/footer";
+import animateText from "./animations/animateText";
 
 gsap.registerPlugin(CSSRulePlugin, Draggable, EaselPlugin, MotionPathPlugin, PixiPlugin, TextPlugin, ScrollToPlugin, ScrollTrigger);
 
@@ -37,10 +36,14 @@ function addBurgerAutoClose() {
 
 addBurgerAutoClose();
 
-navigation();
 header();
 product();
 modes();
 footer();
+
+animateText(document.querySelector(".header__subtitle"));
+
+const titles = document.querySelectorAll(".property__title");
+titles.forEach(title => animateText(title));
 
 
