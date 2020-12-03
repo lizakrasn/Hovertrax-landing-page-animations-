@@ -137,4 +137,13 @@
       right: -1px;
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    &__info {
+      &::after {
+        bottom: -90px;
+        left: 200px;
+      }
+    }
+  }
 }

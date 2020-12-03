@@ -96,4 +96,70 @@
     background-color: #aaaaaa;
   }
 
+  @media screen and (max-width: 1600px) {
+    &__title {
+      margin: 50px 0;
+    }
+
+    &__media {
+      width: 600px;
+      height: 550px;
+      position: relative;
+      margin-right: 70px;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    &__options {
+      bottom: -50px;
+      right: -50px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column-reverse;
+
+    &__info {
+      position: relative;
+      display: flex;
+      margin: auto;
+      margin-top: 50px;
+    }
+
+    &__title {
+      position: absolute;
+      top: -100px;
+      left: calc(50% - 90px)
+    }
+
+    &__options {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+  
+      max-width: fit-content;
+      margin: 0;
+      position: static;
+    }
+
+    &__image-hoverboard {
+      width: 350px;
+      height: 200px;
+    }
+
+    &__colorful-buttons {
+      margin: 0 0 30px;
+    }
+
+    &__arrow {
+      display: none;
+    }
+
+    &__media {
+      width: 800px;
+      height: 550px;
+      position: relative;
+      margin: 50px auto 0;
+    }
+  }
 }

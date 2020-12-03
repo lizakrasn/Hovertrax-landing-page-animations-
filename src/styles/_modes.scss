@@ -84,9 +84,24 @@
 
   @media screen and (max-width: 1600px) {
     height: 550px;
+    margin: 70px 0 130px 0;
 
     &__media {
       width: calc(100% - 408px);
     }
+
+    &__arrow {
+      top: 24px;
+      right: -15px;
+    }
+  
+    &__arrow-body {
+      width: 120px;
+      height: 270px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin: 170px 0;
   }
 }
