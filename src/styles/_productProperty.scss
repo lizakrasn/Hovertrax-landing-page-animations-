@@ -1,5 +1,5 @@
 .property {
-  max-width: 280px;
+  max-width: 268px;
 
   &__title {
     font-family: 'Rubik Mono One', Arial, Helvetica, sans-serif;
@@ -40,6 +40,32 @@
       top: 10px;
       left: 0;
       border: 3px solid black;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    max-width: 280px;
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__text {
+      margin: 10px 0;
+      font-size: 15px;
+    }
+
+    &__item {
+      margin-bottom: 10px;
+      font-size: 15px;
+
+      &::after {
+        content: "";
+        width: 15px;
+        top: 10px;
+        left: 10px;
+        border: 2px solid black;
+      }
     }
   }
 }

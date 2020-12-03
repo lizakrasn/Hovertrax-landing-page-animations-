@@ -115,6 +115,10 @@
       margin: 60px 0 50px;
     }
 
+    &__info {
+      max-width: 280px;
+    }
+
     &__button {
       margin-top: 50px;
     }
@@ -155,6 +159,79 @@
 
     &__button {
       margin-top: 30px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    height: 500px;
+
+    &__container {
+      padding-left: 50px;
+    }
+
+    &__title {
+      margin: 20px 0;
+    }
+
+    &__image-container {
+      height: 300px;
+      width: 400px;
+    }
+
+    &__button {
+      margin-top: 20px;
+      width: 200px;
+      height: 40px;
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    height: fit-content;
+
+    &__container {
+      padding: 0px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__title {
+      margin: 25px 0;
+      font-size: 18px;
+    }
+  
+    &__text {
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    &__button {
+      font-size: 12px;
+      height: 30px;
+      width: 170px;
+    }
+
+    &__image-container {
+      height: 180px;
+      width: 260px;
+      margin: 20px 0 30px;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+
+    &__background-comment {
+      bottom: -9px;
+      left: -4px;
+      font-size: 100px;
+      font-size: 45px;
+      letter-spacing: 2px;
+    }
+
+    &__comment {
+      height: 20px;
+      padding: 3px;
     }
   }
 }

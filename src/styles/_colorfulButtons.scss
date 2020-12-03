@@ -39,4 +39,20 @@
     margin-right: 25px;
     background-color: #0c0c0c,
   }
+
+  @media screen and (max-width: 900px) {
+    &__1,
+    &__2,
+    &__3,
+    &__4,
+    &__5 {
+      width: 20px;
+      height: 20px;
+      margin-left: 15px;
+      }
+    
+    &__5 {
+      margin-right: 60px;
+    }
+  }
 }
